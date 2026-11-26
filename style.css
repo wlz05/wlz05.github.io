@@ -99,16 +99,21 @@ dd {
   border-radius: 0.625rem;
 }
 
-.papers {
+.homepage-section {
   margin-top: clamp(2rem, 5vw, 3rem);
   padding-top: 1.5rem;
   border-top: 1px solid #dce4ed;
 }
 
-.papers h2 {
+.homepage-section h2 {
   margin: 0 0 0.875rem;
   font: 400 1.625rem / 1.2 Georgia, serif;
   letter-spacing: -0.04em;
+}
+
+.research-interests {
+  margin: 0;
+  line-height: 1.5;
 }
 
 .paper h3 {
