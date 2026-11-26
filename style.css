@@ -32,6 +32,15 @@ h1 {
   letter-spacing: -0.065em;
 }
 
+.chinese-name {
+  display: inline-block;
+  color: #53647a;
+  font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  font-size: 0.36em;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
 .details {
   display: grid;
   gap: 0.875rem;
@@ -57,23 +66,7 @@ dd {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-a {
-  color: #234970;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
   overflow-wrap: anywhere;
-}
-
-a:hover {
-  color: #142c49;
-}
-
-a:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 0.25rem;
-  border-radius: 0.125rem;
 }
 
 .portrait {
