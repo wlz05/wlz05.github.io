@@ -1,11 +1,18 @@
 :root {
+  --color-text: #172538;
+  --color-muted: #53647a;
+  --color-border: #dce4ed;
+  --font-heading: Georgia, serif;
+
   color-scheme: light;
   font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
-  color: #172538;
+  color: var(--color-text);
   background: #fff;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,19 +37,19 @@ body {
   container-type: inline-size;
 }
 
-h1 {
+.profile h1 {
   display: flex;
   align-items: baseline;
   gap: 0.22em;
   margin: 0 0 0.8rem;
-  font: 400 min(5.4vw, 3.5rem) / 1.12 Georgia, serif;
+  font: 400 min(5.4vw, 3.5rem) / 1.12 var(--font-heading);
   font-size: min(12cqi, 3.5rem);
   letter-spacing: -0.055em;
   white-space: nowrap;
 }
 
 .chinese-name {
-  color: #53647a;
+  color: var(--color-muted);
   font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
   font-size: 0.42em;
   letter-spacing: 0;
@@ -59,7 +66,7 @@ h1 {
 }
 
 .study-period {
-  color: #53647a;
+  color: var(--color-muted);
   font-size: 0.9375rem;
   font-weight: 400;
 }
@@ -70,22 +77,22 @@ h1 {
   max-width: 26rem;
   margin: 1.5rem 0 0;
   padding-top: 1.125rem;
-  border-top: 1px solid #dce4ed;
+  border-top: 1px solid var(--color-border);
 }
 
-.details div {
+.details > div {
   display: grid;
   grid-template-columns: 6rem minmax(0, 1fr);
   align-items: baseline;
   column-gap: 0.5rem;
 }
 
-dt {
-  color: #53647a;
+.details dt {
+  color: var(--color-muted);
   font-size: 0.875rem;
 }
 
-dd {
+.details dd {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
@@ -102,12 +109,12 @@ dd {
 .homepage-section {
   margin-top: clamp(2rem, 5vw, 3rem);
   padding-top: 1.5rem;
-  border-top: 1px solid #dce4ed;
+  border-top: 1px solid var(--color-border);
 }
 
 .homepage-section h2 {
   margin: 0 0 0.875rem;
-  font: 400 1.625rem / 1.2 Georgia, serif;
+  font: 400 1.625rem / 1.2 var(--font-heading);
   letter-spacing: -0.04em;
 }
 
@@ -126,7 +133,7 @@ dd {
 
 .paper-venue {
   margin: 0.5rem 0 0;
-  color: #53647a;
+  color: var(--color-muted);
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -148,7 +155,7 @@ dd {
 }
 
 @media (max-width: 22rem) {
-  .details div {
+  .details > div {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 0.25rem;
   }
