@@ -54,11 +54,14 @@ h1 {
   line-height: 1.5;
 }
 
-.student-period {
-  margin: 0.3rem 0 0;
+.university {
+  white-space: nowrap;
+}
+
+.study-period {
   color: #53647a;
   font-size: 0.9375rem;
-  line-height: 1.5;
+  font-weight: 400;
 }
 
 .details {
