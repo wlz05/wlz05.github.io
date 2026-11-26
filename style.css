@@ -96,19 +96,16 @@ dd {
 
 .paper h3 {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 
-.paper p {
-  margin: 0.25rem 0 0;
-  line-height: 1.5;
-}
-
-.paper .paper-venue {
-  margin-top: 0.5rem;
+.paper-venue {
+  margin: 0.5rem 0 0;
   color: #53647a;
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 40rem) {
