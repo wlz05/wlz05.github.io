@@ -18,12 +18,15 @@ body {
   padding: clamp(1.5rem, 6vw, 5rem);
 }
 
+.homepage {
+  width: min(100%, 59rem);
+}
+
 .profile {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: clamp(2rem, 7vw, 6rem);
-  width: min(100%, 59rem);
 }
 
 h1 {
@@ -76,15 +79,55 @@ dd {
   border-radius: 0.75rem;
 }
 
+.papers {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1fr) minmax(0, 3fr);
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: 1.75rem;
+  border-top: 1px solid #dce4ed;
+}
+
+.papers h2 {
+  margin: 0;
+  font: 400 1.75rem / 1.15 Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.paper h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.paper p {
+  margin: 0.25rem 0 0;
+  line-height: 1.5;
+}
+
+.paper .paper-venue {
+  margin-top: 0.5rem;
+  color: #53647a;
+  font-size: 0.875rem;
+}
+
 @media (max-width: 40rem) {
+  .homepage {
+    width: min(100%, 24rem);
+  }
+
   .profile {
     grid-template-columns: minmax(0, 1fr);
-    width: min(100%, 24rem);
   }
 
   .portrait {
     grid-row: 1;
     width: clamp(8rem, 34vw, 11rem);
+  }
+
+  .papers {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
   }
 }
 
